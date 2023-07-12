@@ -1,0 +1,9 @@
+from typing import Set
+from weaviate.exceptions import SchemaValidationException as SchemaValidationException
+
+CLASS_KEYS: Set[str]
+PROPERTY_KEYS: Set[str]
+
+def validate_schema(schema: dict) -> None: ...
+def check_class(class_definition: dict) -> None: ...
+def check_property(class_property: dict) -> None: ...

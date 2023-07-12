@@ -1,0 +1,13 @@
+from typing import Optional
+
+class ConnectionConfig:
+    session_pool_connections: int
+    session_pool_maxsize: int
+    def __post_init__(self) -> None: ...
+    def __init__(self, session_pool_connections, session_pool_maxsize) -> None: ...
+
+class Config:
+    grpc_port_experimental: Optional[int]
+    connection_config: ConnectionConfig
+    def __post_init__(self) -> None: ...
+    def __init__(self, grpc_port_experimental, connection_config) -> None: ...
