@@ -1,5 +1,5 @@
-from typing import Dict, Optional
 import subprocess
+from typing import Dict, Optional
 from weaviate import exceptions as exceptions
 from weaviate.exceptions import WeaviateStartUpError as WeaviateStartUpError
 

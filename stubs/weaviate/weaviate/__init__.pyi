@@ -6,3 +6,4 @@ from .data.replication import ConsistencyLevel as ConsistencyLevel
 from .embedded import EmbeddedOptions as EmbeddedOptions
 from .exceptions import AuthenticationFailedException as AuthenticationFailedException, ObjectAlreadyExistsException as ObjectAlreadyExistsException, SchemaValidationException as SchemaValidationException, UnexpectedStatusCodeException as UnexpectedStatusCodeException, WeaviateStartUpError as WeaviateStartUpError
 from .gql.get import AdditionalProperties as AdditionalProperties, LinkTo as LinkTo
+from .schema.crud_schema import Tenant as Tenant, TenantActivityStatus as TenantActivityStatus

@@ -3,7 +3,6 @@ from .get import GetBuilder as GetBuilder, PROPERTIES as PROPERTIES
 from .multi_get import MultiGetBuilder as MultiGetBuilder
 from typing import Any, Dict, List, Optional
 from weaviate.connect import Connection as Connection
-from weaviate.exceptions import UnexpectedStatusCodeException as UnexpectedStatusCodeException
 
 class Query:
     def __init__(self, connection: Connection) -> None: ...

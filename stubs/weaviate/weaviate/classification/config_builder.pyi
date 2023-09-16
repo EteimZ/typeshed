@@ -1,6 +1,6 @@
+from .classification import Classification as Classification
 from weaviate.connect import Connection as Connection
 from weaviate.exceptions import UnexpectedStatusCodeException as UnexpectedStatusCodeException
-from .classification import Classification as Classification
 
 class ConfigBuilder:
     def __init__(self, connection: Connection, classification: Classification) -> None: ...

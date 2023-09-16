@@ -1,5 +1,4 @@
-from _typeshed import Incomplete
-from typing import Dict, Optional
+from typing import Dict
 from requests import Response as Response
 
 ERROR_CODE_EXPLANATION: Dict[int, str]
@@ -10,6 +9,11 @@ class WeaviateBaseError(Exception):
 
 class UnexpectedStatusCodeException(WeaviateBaseError):
     def __init__(self, message: str, response: Response) -> None: ...
+    @property
+    def status_code(self) -> int: ...
+
+class ResponseCannotBeDecodedException(WeaviateBaseError):
+    def __init__(self, location: str, response: Response) -> None: ...
     @property
     def status_code(self) -> int: ...
 

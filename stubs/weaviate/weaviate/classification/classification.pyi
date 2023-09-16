@@ -1,6 +1,5 @@
 from .config_builder import ConfigBuilder as ConfigBuilder
 from weaviate.connect import Connection as Connection
-from weaviate.exceptions import UnexpectedStatusCodeException as UnexpectedStatusCodeException
 from weaviate.util import get_valid_uuid as get_valid_uuid
 
 class Classification:

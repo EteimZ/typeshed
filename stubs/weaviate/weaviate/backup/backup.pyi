@@ -1,6 +1,6 @@
-from typing import Any, Dict, List, Set, Union
+from typing import Any, Dict, Set, List, Union
 from weaviate.connect import Connection as Connection
-from weaviate.exceptions import BackupFailedException as BackupFailedException, EmptyResponseException as EmptyResponseException, UnexpectedStatusCodeException as UnexpectedStatusCodeException
+from weaviate.exceptions import BackupFailedException as BackupFailedException, EmptyResponseException as EmptyResponseException
 
 STORAGE_NAMES: Set[str]
 
